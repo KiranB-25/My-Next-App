@@ -25,11 +25,11 @@ const Footer = () => {
           </h3>
           <ul className="space-y-2 text-white text-opacity-90">
             <li><a href="/home" className="hover:underline">Home</a></li>
-            <li><a href="/#about" className="hover:underline">About</a></li>
-            <li><a href="/#skills" className="hover:underline">Skills</a></li>
-            <li><a href="/#experience" className="hover:underline">Experience</a></li>
+            <li><a href="#about" className="hover:underline">About</a></li>
+            <li><a href="#skills" className="hover:underline">Skills</a></li>
+            <li><a href="#experience" className="hover:underline">Experience</a></li>
             <li><a href="/contact" className="hover:underline">Contact</a></li>
-            <li><a href="/#projects" className="hover:underline">Projects</a></li>
+            <li><a href="#projects" className="hover:underline">Projects</a></li>
             <li><a href="/location" className="hover:underline">Location</a></li>
           </ul>
         </div>

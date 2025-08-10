@@ -6,7 +6,7 @@ const MapSection = () => {
       className="relative w-full py-16 px-6 bg-gradient-to-br from-[#fdfbfb] to-[#ebedee] dark:from-gray-900 dark:to-gray-800 overflow-hidden"
     >
       <div className="relative max-w-5xl mx-auto z-10">
-        <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 mb-8 text-center pb-2">
+        <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 mb-8 text-center pb-2 mt-7">
           My Location
         </h2>
 

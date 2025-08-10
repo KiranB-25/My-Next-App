@@ -77,7 +77,7 @@ const ProjectsSection: React.FC = () => {
   return (
       <section id="projects" className="py-20 bg-gray-100 dark:bg-[#0d1117] transition-colors">
         <div className="container mx-auto px-6 md:px-12">
-          <h2 className="text-4xl font-bold text-center mb-14 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 pb-2">
+          <h2 className="text-4xl font-bold text-center mb-14 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 pb-2 mt-7">
             My Projects
           </h2>
 

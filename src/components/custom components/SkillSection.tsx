@@ -1,3 +1,6 @@
+"use client";
+import { useState } from "react";
+
 const skills = [
   {
     title: "Front-End Development",
@@ -22,6 +25,16 @@ const skills = [
 ];
 
 const SkillsSection = () => {
+  const [flipped, setFlipped] = useState(Array(skills.length).fill(false));
+
+  const handleFlip = (index: number) => {
+    setFlipped((prev) => {
+      const updated = [...prev];
+      updated[index] = !updated[index];
+      return updated;
+    });
+  };
+
   return (
     <section
       id="skills"
@@ -32,7 +45,7 @@ const SkillsSection = () => {
       <div className="absolute bottom-[-100px] right-[-100px] w-[350px] h-[350px] bg-gradient-to-br from-pink-400 via-purple-400 to-blue-400 opacity-20 rounded-full blur-2xl animate-ping z-0" />
 
       <div className="relative max-w-7xl mx-auto px-6 text-center z-10">
-        <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600 mb-14 pb-2">
+        <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600 mb-14 pb-2 mt-7">
           My Skills
         </h2>
 
@@ -40,9 +53,16 @@ const SkillsSection = () => {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="group [perspective:1000px] h-80 w-full"
+              className="group [perspective:1000px] h-80 w-full cursor-pointer"
+              onClick={() => handleFlip(index)}
             >
-              <div className="relative h-full w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div
+                className={`relative h-full w-full transition-transform duration-700 [transform-style:preserve-3d] ${
+                  flipped[index]
+                    ? "[transform:rotateY(180deg)]"
+                    : "group-hover:[transform:rotateY(180deg)]"
+                }`}
+              >
                 {/* Front Side */}
                 <div className="absolute inset-0 bg-gradient-to-br from-pink-400 to-purple-600 text-white rounded-xl shadow-xl flex items-center justify-center text-lg font-semibold backface-hidden">
                   {skill.title}

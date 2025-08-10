@@ -14,10 +14,8 @@ const Home = () => {
       <HeroSection />
       <AboutSection />
       <SkillsSection />
-      <ProjectsSection />
       <ExperienceSection />
-      <ContactSection />
-      <MapSection />
+      <ProjectsSection />
     </>
   );
 };

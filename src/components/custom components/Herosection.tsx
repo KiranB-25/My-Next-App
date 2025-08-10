@@ -29,7 +29,7 @@ export default function HeroSection() {
       <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Side */}
         <div>
-          <h1 className="text-4xl sm:text-5xl font-bold leading-tight text-gray-900 dark:text-white">
+          <h1 className="text-4xl sm:text-5xl font-bold leading-tight text-gray-900 dark:text-white mt-2">
             Hi, I&apos;m{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500">
               Kiran Bukhari
@@ -78,6 +78,7 @@ export default function HeroSection() {
                 src={img}
                 alt={`Slide ${index + 1}`}
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover"
                 priority={index === 0}
               />

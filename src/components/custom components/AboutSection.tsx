@@ -13,7 +13,7 @@ const AboutSection = () => {
       <div className="absolute bottom-[-80px] right-[-80px] w-[350px] h-[350px] bg-gradient-to-br from-purple-400 via-pink-400 to-blue-400 opacity-20 rounded-full blur-2xl animate-ping z-0" />
 
       <div className="relative max-w-5xl mx-auto z-10">
-        <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 mb-8 text-center">
+        <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 mb-8 text-center mt-7">
           About Me
         </h2>
 
@@ -24,6 +24,7 @@ const AboutSection = () => {
               src="/images/profile.jpg"
               alt="Syeda Kiran Bukhari"
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover"
             />
           </div>
